@@ -1,0 +1,119 @@
+################################################################################
+[Thu 30 Apr 08:07:08 CEST 2026] - Installation of API Manager :
+################################################################################
+
+-------------------------------
+[Thu 30 Apr 08:07:09 CEST 2026] - Download artificat
+-------------------------------
+Discovery: http://nexus.xxxx/content/repositories/snapshots/
+Audit: http://nexus.xxxx/content/repositories/snapshots/
+Messaging: http://nexus.xxxx/content/repositories/snapshots/
+Administration: http://nexus.xxxx/content/repositories/snapshots/
+API: http://nexus.xxxx/content/repositories/snapshots/
+...
+
+-------------------------------
+[Thu 30 Apr 08:07:46 CEST 2026] - Start the deployment of API Manager microservices on www.sever.net
+-------------------------------
+
+-------------------------------
+[Thu 30 Apr 08:08:13 CEST 2026] - Start API Manager
+-------------------------------
+
+-------------------------------
+[Thu 30 Apr 08:09:37 CEST 2026] - Insertion of license in DB
+-------------------------------
+1 row created.
+
+-------------------------------
+[Thu 30 Apr 08:10:43 CEST 2026] - Successful install of Manager
+-------------------------------
+Update users and roles in adminWeb
+Connect to https://www.sever.net:8001/login.html
+ login/pwd: admin@live.server.net/Admin#01
+		    admin2@live.server.net/Admin#01
+Connect to https://www.server.net:8050/login.html
++ TEST_RETURN_CODE=0
++ exit 0
+
+
+###############################
+[2026-04-30 08:15:45 UTC+0200] - Configuration of the import
+###############################
+
+###############################
+[2026-04-30 08:16:16 UTC+0200] - HARDWARE SUMMARY
+###############################
+HOSTNAME, OS, OS_VERSION, CPU_COUNT, CPU_MODEL, MEMORY
+
+
+###############################
+[2026-04-30 08:16:17 UTC+0200] - Restart Microservices
+###############################
+Waiting for Manager services to start...
+
+###############################
+[2026-04-30 08:22:32 UTC+0200] - Start Monitoring
+###############################
+
+###############################
+[2026-04-30 08:22:36 UTC+0200] - Number of records in DB before TEST Run
+###############################
+records
+0
+###############################
+[2026-04-30 08:22:40 UTC+0200] - Running Test
+###############################
+INFO    : Starting job progress monitoring...
+2026-04-30 08:22:40 INFO   : Count WLM_KZ_RECORD=0; Count WLM_STATS_IMPORT=0
+Creating summariser <summary>
+
+###############################
+[2026-04-30 09:02:24 UTC+0200] - Test Finished
+###############################
+
+###############################
+[2026-04-30 09:02:24 UTC+0200] - Number of records in DB after TEST Run
+###############################
+records
+2699683
+
+###############################
+[2026-04-30 09:02:25 UTC+0200] - Stop Monitoring
+###############################
+INFO    : Stopping job progress monitoring...
+
+
+###############################
+[2026-04-30 09:02:41 UTC+0200] - SYSTEM MONITORING
+###############################
+MONITORING ON www.server.net:
+
+weighted_avg_cpu(%)  weighted_avg_logical_cpu  avg_cpu(%)  min_cpu(%)  max_cpu(%)  weighted_avg_mem(MB)  avg_mem(MB)  min_mem(MB)  max_mem(MB)  weighted_avg_diskio(/s)  avg_diskio(/s)  min_diskio(/s)  max_diskio(/s)
+100.00%              8.00/8                    100.00%     100.00%     100.00%     0                     0            0            0
+line 0: warning: Skipping data file with no valid points
+
+
+###############################
+[2026-04-30 09:02:42 UTC+0200] - JAVA MONITORING
+###############################
+JVM MONITORING:
+JVM_"Stop-the-world"_GC_Time_(%)  JVM_Memleak_Ratio
+0.12                              49
+
+###############################
+[2026-04-30 09:02:42 UTC+0200] - DB MONITORING
+###############################
+AWR MONITORING:
+db_time(s)  elapsed_time(s)  db_load
+18547       2394             0.48420530
+
+###############################
+[2026-04-30 09:02:42 UTC+0200] - Test Results
+###############################
+Import completed successfully
+Import duration in sec : 1980
+
+###############################
+[2026-04-30 09:02:43 UTC+0200] - HARDWARE SUMMARY
+###############################

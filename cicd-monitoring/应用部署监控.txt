@@ -1,7 +1,4 @@
 CI CD监控工具:
 - Grafana dashboard 应用性能
 - Prometheus 性能监控
-- Datadog
-
-Dashboard Platform 监控和分析
-Metric 指标
+- Datadog Log日志监控
